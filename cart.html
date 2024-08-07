@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Tutorial</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#" id=""><img src="img/mylogo.png" class="logo" alt="" width="150px" height="150px"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a style="top: 0%;"   href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"  class="active" target="_blank"><i class='bx bx-shopping-bag'></i></a></li> 
+            </ul>
+        </div>
+    </section>  
+    <section id="page-hero">
+        <h2>STAY HOME</h2>
+        <p>save more with coupons & up to 70% off!</p>
+
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                <tr>
+                    <td><a href="#" class="removeItem"><i class='bx bx-no-entry'></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon</td>
+                    <td class="price">118</td>
+                    <td><input type="number" value="1" min="1" class="quantity"></td>
+                    <td class="subtotal">118</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="removeItem"><i class='bx bx-no-entry'></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon</td>
+                    <td class="price">118</td>
+                    <td><input type="number" value="1" min="1" class="quantity"></td>
+                    <td class="subtotal">118</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="removeItem"><i class='bx bx-no-entry'></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon</td>
+                    <td class="price">118</td>
+                    <td><input type="number" value="1" min="1" class="quantity"></td>
+                    <td class="subtotal">118</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id="cartSubtotal">$355</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="cartTotal">$355</td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+    
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/mylogo.png" alt="" width="250px" height="250px">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Harm,Giza,Egypt</p>
+            <p><strong>Phone:</strong>+201061036878</p>
+            <p><strong>Hours:</strong>24 hours</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100007029407811" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com/in/mahmoud-abdelaal-99bb47276/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.instagram.com/mahmouddabdelaal?igsh=Mjk1NWhtcHhpaGE2&utm_source=qr" target="_blank"><i class='bx bxl-instagram' ></i></a>
+    
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order </a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Secured Payment Gateways</h4>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="top"><button id="scrollToTop" onclick="scrollToTop()">↑ Back to Top</button></div>
+
+
+
+    </footer>
+
+
+
+    <script src="cart.js">
+        </script>
+    </body>
+
+</html>
